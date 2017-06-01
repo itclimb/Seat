@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YCSeatViewController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"电影选座";
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    YCSeatViewController *vc = [[YCSeatViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

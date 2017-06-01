@@ -29,6 +29,12 @@
 		3F9B5FFD1EE00B4800469257 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B5FF11EE00B4800469257 /* NSObject+MJProperty.m */; };
 		3F9B5FFE1EE00B4800469257 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B5FF31EE00B4800469257 /* NSString+MJExtension.m */; };
 		3F9B60021EE00B7D00469257 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B60011EE00B7D00469257 /* MBProgressHUD.m */; };
+		3F9B60081EE00D9900469257 /* YCSeatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B60071EE00D9900469257 /* YCSeatViewController.m */; };
+		3F9B600B1EE00F4000469257 /* YCSeatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B600A1EE00F4000469257 /* YCSeatModel.m */; };
+		3F9B600E1EE00F5B00469257 /* YCSeatsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B600D1EE00F5B00469257 /* YCSeatsModel.m */; };
+		3F9B60111EE00FB700469257 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B60101EE00FB700469257 /* UIView+Extension.m */; };
+		3F9B60141EE0113D00469257 /* YCSeatSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B60131EE0113D00469257 /* YCSeatSelectionView.m */; };
+		3F9B60171EE0116F00469257 /* YCSeatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B60161EE0116F00469257 /* YCSeatView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +76,18 @@
 		3F9B5FF31EE00B4800469257 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		3F9B60001EE00B7D00469257 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		3F9B60011EE00B7D00469257 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3F9B60061EE00D9900469257 /* YCSeatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSeatViewController.h; sourceTree = "<group>"; };
+		3F9B60071EE00D9900469257 /* YCSeatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSeatViewController.m; sourceTree = "<group>"; };
+		3F9B60091EE00F4000469257 /* YCSeatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSeatModel.h; sourceTree = "<group>"; };
+		3F9B600A1EE00F4000469257 /* YCSeatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSeatModel.m; sourceTree = "<group>"; };
+		3F9B600C1EE00F5B00469257 /* YCSeatsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSeatsModel.h; sourceTree = "<group>"; };
+		3F9B600D1EE00F5B00469257 /* YCSeatsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSeatsModel.m; sourceTree = "<group>"; };
+		3F9B600F1EE00FB700469257 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		3F9B60101EE00FB700469257 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		3F9B60121EE0113D00469257 /* YCSeatSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSeatSelectionView.h; sourceTree = "<group>"; };
+		3F9B60131EE0113D00469257 /* YCSeatSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSeatSelectionView.m; sourceTree = "<group>"; };
+		3F9B60151EE0116F00469257 /* YCSeatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSeatView.h; sourceTree = "<group>"; };
+		3F9B60161EE0116F00469257 /* YCSeatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSeatView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +144,8 @@
 			children = (
 				3F9B5FC71EE00B0200469257 /* Controller */,
 				3F9B5FCC1EE00B0200469257 /* Model */,
-				3F9B5FCD1EE00B0200469257 /* Other */,
 				3F9B5FCE1EE00B0200469257 /* View */,
+				3F9B5FCD1EE00B0200469257 /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -139,6 +157,8 @@
 				3F9B5FC91EE00B0200469257 /* AppDelegate.m */,
 				3F9B5FCA1EE00B0200469257 /* ViewController.h */,
 				3F9B5FCB1EE00B0200469257 /* ViewController.m */,
+				3F9B60061EE00D9900469257 /* YCSeatViewController.h */,
+				3F9B60071EE00D9900469257 /* YCSeatViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,6 +166,10 @@
 		3F9B5FCC1EE00B0200469257 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3F9B60091EE00F4000469257 /* YCSeatModel.h */,
+				3F9B600A1EE00F4000469257 /* YCSeatModel.m */,
+				3F9B600C1EE00F5B00469257 /* YCSeatsModel.h */,
+				3F9B600D1EE00F5B00469257 /* YCSeatsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +177,8 @@
 		3F9B5FCD1EE00B0200469257 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3F9B600F1EE00FB700469257 /* UIView+Extension.h */,
+				3F9B60101EE00FB700469257 /* UIView+Extension.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -160,6 +186,10 @@
 		3F9B5FCE1EE00B0200469257 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F9B60121EE0113D00469257 /* YCSeatSelectionView.h */,
+				3F9B60131EE0113D00469257 /* YCSeatSelectionView.m */,
+				3F9B60151EE0116F00469257 /* YCSeatView.h */,
+				3F9B60161EE0116F00469257 /* YCSeatView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +279,7 @@
 		3F9B5FA41EE009D700469257 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YC;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = itclimb.yuancheng.com;
 				TargetAttributes = {
@@ -300,13 +331,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9B60111EE00FB700469257 /* UIView+Extension.m in Sources */,
 				3F9B5FFA1EE00B4800469257 /* NSObject+MJClass.m in Sources */,
 				3F9B5FF51EE00B4800469257 /* MJExtensionConst.m in Sources */,
+				3F9B600B1EE00F4000469257 /* YCSeatModel.m in Sources */,
+				3F9B60081EE00D9900469257 /* YCSeatViewController.m in Sources */,
+				3F9B60141EE0113D00469257 /* YCSeatSelectionView.m in Sources */,
 				3F9B5FF91EE00B4800469257 /* MJPropertyType.m in Sources */,
+				3F9B60171EE0116F00469257 /* YCSeatView.m in Sources */,
 				3F9B5FF81EE00B4800469257 /* MJPropertyKey.m in Sources */,
 				3F9B5FFC1EE00B4800469257 /* NSObject+MJKeyValue.m in Sources */,
 				3F9B5FFB1EE00B4800469257 /* NSObject+MJCoding.m in Sources */,
 				3F9B5FFE1EE00B4800469257 /* NSString+MJExtension.m in Sources */,
+				3F9B600E1EE00F5B00469257 /* YCSeatsModel.m in Sources */,
 				3F9B5FF71EE00B4800469257 /* MJProperty.m in Sources */,
 				3F9B5FFD1EE00B4800469257 /* NSObject+MJProperty.m in Sources */,
 				3F9B5FD01EE00B0200469257 /* ViewController.m in Sources */,
@@ -466,6 +503,7 @@
 				3F9B5FC51EE009D700469257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
