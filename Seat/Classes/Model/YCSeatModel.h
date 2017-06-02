@@ -10,4 +10,7 @@
 
 @interface YCSeatModel : NSObject
 
+// N: 可选 LK:已售出 E:过道
+@property(nonatomic, copy) NSString *st;
+
 @end

@@ -7,10 +7,18 @@
 //
 
 #import "YCSeatSelectionView.h"
+#import "UIView+Extension.h"
+#import "YCAppLogoView.h"
+#import "YCSeatView.h"
 
 @interface YCSeatSelectionView ()<UIScrollViewDelegate>
 //选座的ScrollView
 @property(nonatomic, strong) UIScrollView *seatScrollView;
+//选座底部插入的logo
+@property(nonatomic, strong) YCAppLogoView *logoView;
+//座位视图
+@property(nonatomic, strong) YCSeatView *seatView;
+//block
 @property(nonatomic, copy) ActionBlock actionBlock;
 
 @end
@@ -29,10 +37,14 @@
                                                 blue:245.0/255.0 alpha:1];
         self.actionBlock = actionBlock;
         [self initScrollView];
+        [self initAppLogo];
     }
     return self;
 }
 
+/**
+ *  init scrollView
+ */
 - (void)initScrollView{
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
     self.seatScrollView = scrollView;
@@ -42,5 +54,26 @@
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self addSubview:scrollView];
+}
+
+/**
+ *  init logo
+ */
+- (void)initAppLogo{
+    YCAppLogoView *logoView = [[YCAppLogoView alloc] init];
+    self.logoView = logoView;
+    logoView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    logoView.centerX = self.width * 0.5;
+    logoView.height = 40;
+    logoView.width = 100;
+    logoView.y = self.height - 40;
+    [self.seatScrollView insertSubview:logoView atIndex:0];
+}
+
+- (void)initSeatView:(NSArray *)seatsDatas {
+    YCSeatView *seatView = [[YCSeatView alloc] initWithSeatsDatas:seatsDatas MaxNormalWidth:self.width SeatBtnActionBlock:^(YCSeatButton *seatBtn, NSMutableDictionary *allAvailableSeats) {
+        
+    }];
+    self.seatView = seatView;
 }
 @end
