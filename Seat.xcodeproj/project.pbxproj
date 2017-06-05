@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1787011EE54112005EF7CD /* YCIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1787001EE54112005EF7CD /* YCIndicatorView.m */; };
 		3F9B5FB11EE009D700469257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B5FB01EE009D700469257 /* main.m */; };
 		3F9B5FBC1EE009D700469257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B5FBB1EE009D700469257 /* Assets.xcassets */; };
 		3F9B5FBF1EE009D700469257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B5FBD1EE009D700469257 /* LaunchScreen.storyboard */; };
@@ -40,7 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F1786FE1EE4EF7D005EF7CD /* YCSeatConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCSeatConfig.h; sourceTree = "<group>"; };
+		3F1786FE1EE4EF7D005EF7CD /* YCSeatConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YCSeatConfig.h; path = ../View/YCSeatConfig.h; sourceTree = "<group>"; };
+		3F1786FF1EE54112005EF7CD /* YCIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCIndicatorView.h; sourceTree = "<group>"; };
+		3F1787001EE54112005EF7CD /* YCIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCIndicatorView.m; sourceTree = "<group>"; };
 		3F9B5FAC1EE009D700469257 /* Seat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9B5FB01EE009D700469257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F9B5FBB1EE009D700469257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,6 +187,7 @@
 		3F9B5FCD1EE00B0200469257 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3F1786FE1EE4EF7D005EF7CD /* YCSeatConfig.h */,
 				3F9B600F1EE00FB700469257 /* UIView+Extension.h */,
 				3F9B60101EE00FB700469257 /* UIView+Extension.m */,
 			);
@@ -201,7 +205,8 @@
 				3F9B60161EE0116F00469257 /* YCSeatView.m */,
 				3F9B601B1EE13D4E00469257 /* YCSeatButton.h */,
 				3F9B601C1EE13D4E00469257 /* YCSeatButton.m */,
-				3F1786FE1EE4EF7D005EF7CD /* YCSeatConfig.h */,
+				3F1786FF1EE54112005EF7CD /* YCIndicatorView.h */,
+				3F1787001EE54112005EF7CD /* YCIndicatorView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 				3F9B5FFB1EE00B4800469257 /* NSObject+MJCoding.m in Sources */,
 				3F9B5FFE1EE00B4800469257 /* NSString+MJExtension.m in Sources */,
 				3F9B600E1EE00F5B00469257 /* YCSeatsModel.m in Sources */,
+				3F1787011EE54112005EF7CD /* YCIndicatorView.m in Sources */,
 				3F9B5FF71EE00B4800469257 /* MJProperty.m in Sources */,
 				3F9B5FFD1EE00B4800469257 /* NSObject+MJProperty.m in Sources */,
 				3F9B601A1EE1144F00469257 /* YCAppLogoView.m in Sources */,

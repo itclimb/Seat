@@ -11,6 +11,7 @@
 #import "YCAppLogoView.h"
 #import "YCSeatView.h"
 #import "YCSeatConfig.h"
+#import "YCIndicatorView.h"
 
 @interface YCSeatSelectionView ()<UIScrollViewDelegate>
 //选座的ScrollView
@@ -19,6 +20,8 @@
 @property(nonatomic, strong) YCAppLogoView *logoView;
 //座位视图
 @property(nonatomic, strong) YCSeatView *seatView;
+//Mini座位图
+@property(nonatomic, strong) YCIndicatorView *indicator;
 //已经选择的座位
 @property(nonatomic, strong) NSMutableArray *selectedSeats;
 //block
@@ -42,6 +45,7 @@
         [self initScrollView];
         [self initAppLogo];
         [self initSeatView:seatsModels];
+        [self initIndicator:seatsModels];
     }
     return self;
 }
@@ -74,6 +78,11 @@
     [self.seatScrollView insertSubview:logoView atIndex:0];
 }
 
+/**
+ init 座位视图
+
+ @param seatsDatas 座位数据
+ */
 - (void)initSeatView:(NSArray *)seatsDatas {
     __weak __typeof__(self)weakSelf = self;
     YCSeatView *seatView = [[YCSeatView alloc] initWithSeatsDatas:seatsDatas MaxNormalWidth:self.width SeatBtnActionBlock:^(YCSeatButton *seatBtn, NSMutableDictionary *allAvailableSeats) {
@@ -94,11 +103,14 @@
             }
         }
         if (weakSelf.actionBlock) weakSelf.actionBlock(weakSelf.selectedSeats,allAvailableSeats,errorStr);
+        //##################
         if (weakSelf.seatScrollView.maximumZoomScale - weakSelf.seatScrollView.zoomScale < 0.1) return;//设置座位放大
         CGFloat maximumZoomScale = weakSelf.seatScrollView.maximumZoomScale;
         CGRect zoomRect = [weakSelf _zoomRectInView:weakSelf.seatScrollView forScale:maximumZoomScale withCenter:CGPointMake(seatBtn.centerX, seatBtn.centerY)];
         [weakSelf.seatScrollView zoomToRect:zoomRect animated:YES];
+        //##################
     }];
+    
     self.seatView = seatView;
     seatView.frame = CGRectMake(0, 0,seatView.seatViewWidth, seatView.seatViewHeight);
     [self.seatScrollView insertSubview:seatView atIndex:0];
@@ -111,6 +123,57 @@
     
 }
 
+
+/**
+ Mini座位图
+
+ @param seatsModels 座位数据
+ */
+- (void)initIndicator:(NSArray *)seatsModels{
+    
+    CGFloat Ratio = 2;
+    YCSeatsModel *seatsModel = seatsModels.firstObject;
+    NSUInteger cloCount = [seatsModel.columns count];
+    if (cloCount % 2) cloCount += 1;
+    CGFloat YCMiniMeIndicatorMaxHeight = self.height / 6;//设置最大高度
+    CGFloat MaxWidth = (self.width - 2 * YCseastsRowMargin) * 0.5;
+    CGFloat currentMiniBtnW_H = MaxWidth / cloCount;
+    CGFloat MaxHeight = currentMiniBtnW_H * seatsModels.count;
+    
+    if (MaxHeight >= YCMiniMeIndicatorMaxHeight ) {
+        currentMiniBtnW_H = YCMiniMeIndicatorMaxHeight / seatsModels.count;
+        MaxWidth = currentMiniBtnW_H * cloCount;
+        MaxHeight = YCMiniMeIndicatorMaxHeight;
+        Ratio = (self.width - 2 * YCseastsRowMargin) / MaxWidth;
+    }
+    
+    YCIndicatorView *indicator = [[YCIndicatorView alloc]initWithView:self.seatView
+                                                            withRatio:Ratio
+                                                       withScrollView:self.seatScrollView];
+    indicator.x = 3;
+    indicator.y = 3 * 3;
+    indicator.width = MaxWidth;
+    indicator.height = MaxHeight;
+    self.indicator = indicator;
+    [self addSubview:indicator];
+    
+}
+
+#pragma mark - UIScrollViewDelegate
+// any offset changes
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+}
+
+
+/**
+ Room
+
+ @param view 父视图
+ @param scale 比例
+ @param center 中心
+ @return Rect
+ */
 - (CGRect)_zoomRectInView:(UIView *)view forScale:(CGFloat)scale withCenter:(CGPoint)center {
     CGRect zoomRect;
     zoomRect.size.height = view.bounds.size.height / scale;

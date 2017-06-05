@@ -68,17 +68,17 @@
             seatBtn.seatsModel = seatsModel;
             seatBtn.seatModel = seatModel;
             
-            if ([seatModel.st isEqualToString:@"N"]) {
+            if ([seatModel.st isEqualToString:@"N"]) {//可选
                 
                 [seatBtn setImage:[UIImage imageNamed:@"kexuan"] forState:UIControlStateNormal];
                 [seatBtn setImage:[UIImage imageNamed:@"xuanzhong"] forState:UIControlStateSelected];
                 seatBtn.seatIndex = seatIndex;
                 [self.allAvailableSeats setObject:seatBtn forKey:[@(seatIndex) stringValue]];
                 
-            } else if ([seatModel.st isEqualToString:@"E"]) {
+            } else if ([seatModel.st isEqualToString:@"E"]) {//过道
                 continue;
                 
-            } else{
+            } else{//已售
                 [seatBtn setImage:[UIImage imageNamed:@"yishou"] forState:UIControlStateNormal];
                 seatBtn.userInteractionEnabled = NO;
             }
