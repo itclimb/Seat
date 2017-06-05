@@ -41,6 +41,7 @@
         self.actionBlock = actionBlock;
         [self initScrollView];
         [self initAppLogo];
+        [self initSeatView:seatsModels];
     }
     return self;
 }

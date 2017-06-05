@@ -11,7 +11,7 @@
 
 @interface YCSeatsModel : NSObject
 //每行的座位数组
-@property(nonatomic, strong) NSArray *colunms;
+@property(nonatomic, strong) NSArray *columns;
 //座位的行号
 @property(nonatomic, copy) NSString *rowId;
 //座位的屏幕行,用于计算座位的位置

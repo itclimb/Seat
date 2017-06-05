@@ -23,11 +23,11 @@
 {
     if (self = [super init]) {
     
-        self.backgroundColor = [UIColor blackColor];
+        self.backgroundColor = [UIColor whiteColor];
         self.actionBlock = actionBlock;
         
         YCSeatsModel *seatsModel = seatsDatas.firstObject;
-        NSUInteger colCount = seatsModel.colunms.count;
+        NSUInteger colCount = seatsModel.columns.count;
         if (colCount % 2) { //奇数列加1
             colCount += 1;
         }
@@ -59,10 +59,10 @@
     
     [seatsDatas enumerateObjectsUsingBlock:^(YCSeatsModel *seatsModel, NSUInteger idx, BOOL * _Nonnull stop) {
         
-        for (int i = 0; i < seatsModel.colunms.count; i++) {
+        for (int i = 0; i < seatsModel.columns.count; i++) {
 
             seatIndex++;
-            YCSeatModel *seatModel = seatsModel.colunms[i];
+            YCSeatModel *seatModel = seatsModel.columns[i];
             YCSeatButton *seatBtn = [YCSeatButton buttonWithType:UIButtonTypeCustom];
             seatBtn.backgroundColor = [UIColor whiteColor];
             seatBtn.seatsModel = seatsModel;
@@ -108,7 +108,7 @@
     for (UIView *view in self.subviews) {
         if ([view isKindOfClass:[YCSeatButton class]]) {
             YCSeatButton *seatBtn = (YCSeatButton *)view;
-            NSInteger col = [seatBtn.seatsModel.colunms indexOfObject:seatBtn.seatModel];
+            NSInteger col = [seatBtn.seatsModel.columns indexOfObject:seatBtn.seatModel];
             NSInteger row = [seatBtn.seatsModel.rowNum integerValue] - 1;
             seatBtn.frame = CGRectMake(col * self.seatBtnWidth, row * self.seatBtnHeight, self.seatBtnWidth, self.seatBtnHeight);
         }

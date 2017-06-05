@@ -36,11 +36,11 @@
     __weak __typeof__(self)weakSelf = self;
     //加载数据
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"seats%zd",arc4random_uniform(4)] ofType:nil];
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"seats %zd.plist",1] ofType:nil];
         NSDictionary *seatsDic = [NSDictionary dictionaryWithContentsOfFile:filePath];
         __block NSMutableArray *seatsArray = seatsDic[@"seats"];
         __block NSMutableArray *seatsDatas = [NSMutableArray arrayWithCapacity:seatsArray.count];
-        [seatsArray enumerateObjectsUsingBlock:^(NSDictionary * obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [seatsArray enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL * _Nonnull stop) {
             YCSeatsModel *model = [YCSeatsModel mj_objectWithKeyValues:obj];
             [seatsDatas addObject:model];
         }];

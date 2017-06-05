@@ -10,4 +10,10 @@
 
 @implementation YCSeatsModel
 
++ (NSDictionary *)mj_objectClassInArray{
+    return @{
+             @"columns":@"YCSeatModel",
+             };
+}
+
 @end

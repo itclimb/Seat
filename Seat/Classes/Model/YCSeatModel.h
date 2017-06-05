@@ -10,6 +10,10 @@
 
 @interface YCSeatModel : NSObject
 
+//座位真实列，用于显示当前座位列号
+@property (nonatomic, copy) NSString *columnId;
+//座位编号
+@property (nonatomic, copy) NSString *seatNo;
 // N: 可选 LK:已售出 E:过道
 @property(nonatomic, copy) NSString *st;
 
