@@ -15,13 +15,13 @@
 @property(nonatomic, assign) CGFloat ratio;
 //背景视图
 @property(nonatomic, weak) UIView *miniMe;
-
+//Mini座位图片
 @property(nonatomic, weak) UIImageView *miniImageView;
-
+//顶部图片
 @property(nonatomic, weak) UIImageView *logo;
-
+//指示框
 @property(nonatomic, weak) UIView *miniIndicator;
-
+//被捕获对象
 @property(nonatomic, weak) UIView *mapView;
 
 @property(nonatomic, weak) UIScrollView *myScrollView;

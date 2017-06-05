@@ -12,6 +12,8 @@
 #import "YCSeatView.h"
 #import "YCSeatConfig.h"
 #import "YCIndicatorView.h"
+#import "YCRowIndexView.h"
+#import "YCCenterLineView.h"
 
 @interface YCSeatSelectionView ()<UIScrollViewDelegate>
 //选座的ScrollView
@@ -22,6 +24,10 @@
 @property(nonatomic, strong) YCSeatView *seatView;
 //Mini座位图
 @property(nonatomic, strong) YCIndicatorView *indicator;
+//座位号标识图
+@property(nonatomic, strong) YCRowIndexView *indexView;
+//中央虚线
+@property(nonatomic, strong) YCCenterLineView *centerLine;
 //已经选择的座位
 @property(nonatomic, strong) NSMutableArray *selectedSeats;
 //block
@@ -46,6 +52,8 @@
         [self initAppLogo];
         [self initSeatView:seatsModels];
         [self initIndicator:seatsModels];
+        [self initRowIndexView:seatsModels];
+        [self initCenterLineView:seatsModels];
     }
     return self;
 }
@@ -157,6 +165,40 @@
     self.indicator = indicator;
     [self addSubview:indicator];
     
+}
+
+
+/**
+ 座位行号标识
+
+ @param seatsModels 座位数据
+ */
+- (void)initRowIndexView:(NSArray *)seatsModels{
+    YCRowIndexView *indexView = [[YCRowIndexView alloc]init];
+    indexView.seatsModels = seatsModels;
+    indexView.width = 13;
+    indexView.height = self.seatView.height + 2 * YCseastMinW_H;
+    indexView.y =  - YCSmallMargin;
+    indexView.x = self.seatScrollView.contentOffset.x + YCseastMinW_H;
+    self.indexView = indexView;
+    [self.seatScrollView addSubview:indexView];
+}
+
+
+/**
+ 中央虚线
+
+ @param seatsModels 座位数据
+ */
+- (void)initCenterLineView:(NSArray *)seatsModels{
+    YCCenterLineView *centerLine = [[YCCenterLineView alloc]init];
+    centerLine.backgroundColor = [UIColor clearColor];
+    centerLine.width = 1;
+    centerLine.height = seatsModels.count * YCseastNomarW_H + 2 * YCSmallMargin ;
+    self.centerLine = centerLine;
+    self.centerLine.centerX = self.seatView.centerX;
+    self.centerLine.y = self.seatScrollView.contentOffset.y + YCCenterLineY;
+    [self.seatScrollView addSubview:self.centerLine];
 }
 
 #pragma mark - UIScrollViewDelegate
