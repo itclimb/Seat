@@ -40,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F1786FE1EE4EF7D005EF7CD /* YCSeatConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCSeatConfig.h; sourceTree = "<group>"; };
 		3F9B5FAC1EE009D700469257 /* Seat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9B5FB01EE009D700469257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F9B5FBB1EE009D700469257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -200,6 +201,7 @@
 				3F9B60161EE0116F00469257 /* YCSeatView.m */,
 				3F9B601B1EE13D4E00469257 /* YCSeatButton.h */,
 				3F9B601C1EE13D4E00469257 /* YCSeatButton.m */,
+				3F1786FE1EE4EF7D005EF7CD /* YCSeatConfig.h */,
 			);
 			path = View;
 			sourceTree = "<group>";

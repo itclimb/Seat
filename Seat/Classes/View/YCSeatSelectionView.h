@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^ActionBlock)(NSMutableArray *, NSMutableDictionary *, NSString *);
+typedef void (^ActionBlock)(NSMutableArray *selectedSeats, NSMutableDictionary *allAvailableSeats, NSString *errorMessage);
 
 @interface YCSeatSelectionView : UIView
 
