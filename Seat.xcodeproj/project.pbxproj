@@ -40,6 +40,7 @@
 		3F9B60171EE0116F00469257 /* YCSeatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B60161EE0116F00469257 /* YCSeatView.m */; };
 		3F9B601A1EE1144F00469257 /* YCAppLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B60191EE1144F00469257 /* YCAppLogoView.m */; };
 		3F9B601D1EE13D4E00469257 /* YCSeatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B601C1EE13D4E00469257 /* YCSeatButton.m */; };
+		3FBF57361EE6483900DC4FD6 /* YCHallLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF57351EE6483900DC4FD6 /* YCHallLogoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,8 @@
 		3F9B60191EE1144F00469257 /* YCAppLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCAppLogoView.m; sourceTree = "<group>"; };
 		3F9B601B1EE13D4E00469257 /* YCSeatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSeatButton.h; sourceTree = "<group>"; };
 		3F9B601C1EE13D4E00469257 /* YCSeatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSeatButton.m; sourceTree = "<group>"; };
+		3FBF57341EE6483900DC4FD6 /* YCHallLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCHallLogoView.h; sourceTree = "<group>"; };
+		3FBF57351EE6483900DC4FD6 /* YCHallLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCHallLogoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +220,8 @@
 				3F1787031EE55B9A005EF7CD /* YCRowIndexView.m */,
 				3F1787051EE55F65005EF7CD /* YCCenterLineView.h */,
 				3F1787061EE55F65005EF7CD /* YCCenterLineView.m */,
+				3FBF57341EE6483900DC4FD6 /* YCHallLogoView.h */,
+				3FBF57351EE6483900DC4FD6 /* YCHallLogoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				3F9B5FFA1EE00B4800469257 /* NSObject+MJClass.m in Sources */,
 				3F9B5FF51EE00B4800469257 /* MJExtensionConst.m in Sources */,
 				3F9B600B1EE00F4000469257 /* YCSeatModel.m in Sources */,
+				3FBF57361EE6483900DC4FD6 /* YCHallLogoView.m in Sources */,
 				3F9B60081EE00D9900469257 /* YCSeatViewController.m in Sources */,
 				3F9B60141EE0113D00469257 /* YCSeatSelectionView.m in Sources */,
 				3F9B5FF91EE00B4800469257 /* MJPropertyType.m in Sources */,
