@@ -18,8 +18,6 @@
 		3F9B5FD81EE00B2B00469257 /* seats 0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B5FD31EE00B2B00469257 /* seats 0.plist */; };
 		3F9B5FD91EE00B2B00469257 /* seats 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B5FD41EE00B2B00469257 /* seats 1.plist */; };
 		3F9B5FDA1EE00B2B00469257 /* seats 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B5FD51EE00B2B00469257 /* seats 2.plist */; };
-		3F9B5FDB1EE00B2B00469257 /* seats 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B5FD61EE00B2B00469257 /* seats 3.plist */; };
-		3F9B5FDC1EE00B2B00469257 /* seats 4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B5FD71EE00B2B00469257 /* seats 4.plist */; };
 		3F9B5FF41EE00B4800469257 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B5FDE1EE00B4800469257 /* Info.plist */; };
 		3F9B5FF51EE00B4800469257 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B5FE11EE00B4800469257 /* MJExtensionConst.m */; };
 		3F9B5FF61EE00B4800469257 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B5FE31EE00B4800469257 /* MJFoundation.m */; };
@@ -63,8 +61,6 @@
 		3F9B5FD31EE00B2B00469257 /* seats 0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "seats 0.plist"; sourceTree = "<group>"; };
 		3F9B5FD41EE00B2B00469257 /* seats 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "seats 1.plist"; sourceTree = "<group>"; };
 		3F9B5FD51EE00B2B00469257 /* seats 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "seats 2.plist"; sourceTree = "<group>"; };
-		3F9B5FD61EE00B2B00469257 /* seats 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "seats 3.plist"; sourceTree = "<group>"; };
-		3F9B5FD71EE00B2B00469257 /* seats 4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "seats 4.plist"; sourceTree = "<group>"; };
 		3F9B5FDE1EE00B4800469257 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F9B5FDF1EE00B4800469257 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
 		3F9B5FE01EE00B4800469257 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
@@ -241,8 +237,6 @@
 				3F9B5FD31EE00B2B00469257 /* seats 0.plist */,
 				3F9B5FD41EE00B2B00469257 /* seats 1.plist */,
 				3F9B5FD51EE00B2B00469257 /* seats 2.plist */,
-				3F9B5FD61EE00B2B00469257 /* seats 3.plist */,
-				3F9B5FD71EE00B2B00469257 /* seats 4.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -346,8 +340,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9B5FF41EE00B4800469257 /* Info.plist in Resources */,
-				3F9B5FDC1EE00B2B00469257 /* seats 4.plist in Resources */,
-				3F9B5FDB1EE00B2B00469257 /* seats 3.plist in Resources */,
 				3F9B5FD91EE00B2B00469257 /* seats 1.plist in Resources */,
 				3F9B5FDA1EE00B2B00469257 /* seats 2.plist in Resources */,
 				3F9B5FD81EE00B2B00469257 /* seats 0.plist in Resources */,

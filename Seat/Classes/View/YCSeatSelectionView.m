@@ -239,12 +239,12 @@
                      } completion:nil];
 }
 
-//MARK: - UIScrollViewDelegate
+#pragma mark - UIScrollViewDelegate
+//return a view that will be scaled
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     return self.seatView;
 }
 
-#pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     // 更新applogo
     if (scrollView.contentOffset.y <= scrollView.contentSize.height - self.height +YCseastsColMargin + 15) {

@@ -23,13 +23,13 @@
     self.title = @"电影选座";
     
     NSDictionary *attributeName = @{NSFontAttributeName: [UIFont systemFontOfSize:21.0],NSForegroundColorAttributeName : [UIColor whiteColor]};
+    
     UILabel *mark = [[UILabel alloc] init];
+    mark.font = [UIFont systemFontOfSize:21.0];
     NSString *str = @"点击";
     mark.text = str;
-    CGSize size = [str sizeWithAttributes:attributeName];
-    mark.center = self.view.center;
-    mark.width = size.width;
-    mark.height = size.height;
+    CGSize strSize = [str sizeWithAttributes:attributeName];
+    mark.frame = CGRectMake((self.view.width - strSize.width) * 0.5, (self.view.height - strSize.height) * 0.5, strSize.width, strSize.height);
     [self.view addSubview:mark];
 }
 
