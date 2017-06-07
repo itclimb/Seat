@@ -27,6 +27,10 @@
     return self;
 }
 
+
+/**
+ *  标签Button
+ */
 - (void)createCenterButton{
     UIButton *centerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [centerBtn setTitle:@"中央位置" forState:UIControlStateNormal];
@@ -57,10 +61,8 @@
     [self setNeedsDisplay];
 }
 
-
 /**
- 绘制虚线
-
+ *  绘制虚线
  @param rect 范围
  */
 - (void)drawRect:(CGRect)rect{

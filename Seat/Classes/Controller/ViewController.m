@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "YCSeatViewController.h"
+#import "UIView+Extension.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,16 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"电影选座";
+    
+    NSDictionary *attributeName = @{NSFontAttributeName: [UIFont systemFontOfSize:21.0],NSForegroundColorAttributeName : [UIColor whiteColor]};
+    UILabel *mark = [[UILabel alloc] init];
+    NSString *str = @"点击";
+    mark.text = str;
+    CGSize size = [str sizeWithAttributes:attributeName];
+    mark.center = self.view.center;
+    mark.width = size.width;
+    mark.height = size.height;
+    [self.view addSubview:mark];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

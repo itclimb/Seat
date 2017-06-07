@@ -132,10 +132,7 @@
                                                         (self.width - seatView.seatViewWidth)/2,
                                                         YCseastsColMargin,
                                                         (self.width - seatView.seatViewWidth)/2);
-
-    
 }
-
 
 /**
  Mini座位图
