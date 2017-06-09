@@ -10,6 +10,7 @@
 		3F1787011EE54112005EF7CD /* YCIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1787001EE54112005EF7CD /* YCIndicatorView.m */; };
 		3F1787041EE55B9A005EF7CD /* YCRowIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1787031EE55B9A005EF7CD /* YCRowIndexView.m */; };
 		3F1787071EE55F65005EF7CD /* YCCenterLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1787061EE55F65005EF7CD /* YCCenterLineView.m */; };
+		3F21AC9F1EEA8ED400D2B238 /* seat1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F21AC9E1EEA8ED400D2B238 /* seat1.gif */; };
 		3F9B5FB11EE009D700469257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B5FB01EE009D700469257 /* main.m */; };
 		3F9B5FBC1EE009D700469257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B5FBB1EE009D700469257 /* Assets.xcassets */; };
 		3F9B5FBF1EE009D700469257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B5FBD1EE009D700469257 /* LaunchScreen.storyboard */; };
@@ -49,6 +50,7 @@
 		3F1787031EE55B9A005EF7CD /* YCRowIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCRowIndexView.m; sourceTree = "<group>"; };
 		3F1787051EE55F65005EF7CD /* YCCenterLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCenterLineView.h; sourceTree = "<group>"; };
 		3F1787061EE55F65005EF7CD /* YCCenterLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCenterLineView.m; sourceTree = "<group>"; };
+		3F21AC9E1EEA8ED400D2B238 /* seat1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = seat1.gif; sourceTree = "<group>"; };
 		3F9B5FAC1EE009D700469257 /* Seat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9B5FB01EE009D700469257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F9B5FBB1EE009D700469257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		3F9B5FAE1EE009D700469257 /* Seat */ = {
 			isa = PBXGroup;
 			children = (
+				3F21AC9E1EEA8ED400D2B238 /* seat1.gif */,
 				3F9B5FD21EE00B1B00469257 /* Resource */,
 				3F9B5FD11EE00B1600469257 /* Lib */,
 				3F9B5FC61EE00B0200469257 /* Classes */,
@@ -343,6 +346,7 @@
 				3F9B5FD91EE00B2B00469257 /* seats 1.plist in Resources */,
 				3F9B5FDA1EE00B2B00469257 /* seats 2.plist in Resources */,
 				3F9B5FD81EE00B2B00469257 /* seats 0.plist in Resources */,
+				3F21AC9F1EEA8ED400D2B238 /* seat1.gif in Resources */,
 				3F9B5FBF1EE009D700469257 /* LaunchScreen.storyboard in Resources */,
 				3F9B5FBC1EE009D700469257 /* Assets.xcassets in Resources */,
 			);
