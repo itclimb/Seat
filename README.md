@@ -15,5 +15,4 @@ translate message though block<br>
 [self initCenterLineView:seatsModels];
 [self initHallLogoView:hallName];
 [self startAnimation];
-```   
-    
+```
