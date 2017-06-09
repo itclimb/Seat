@@ -5,8 +5,7 @@
     [我的简书](http://www.jianshu.com/u/848ae424944b)<br>
 * The follow is result show:<br>
 ![](https://github.com/itclimb/Seat/raw/master/Seat/seat1.gif)<br>
-
-The main structure is create some subViews in YCSeatSelectionView,translate message though block<br>
+* The main structure is create some subViews in YCSeatSelectionView,translate message though block<br>
 ```objective-C
 [self initScrollView];
 [self initAppLogo];
