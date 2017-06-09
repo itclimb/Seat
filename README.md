@@ -5,6 +5,7 @@
 The follow is result show<br>
 ![](https://github.com/itclimb/Seat/raw/master/Seat/seat1.gif)<br>
 The main structure is create some subViews in YCSeatSelectionView<br>
+translate message though block<br>
 ```objective-C
 [self initScrollView];
 [self initAppLogo];
@@ -14,6 +15,5 @@ The main structure is create some subViews in YCSeatSelectionView<br>
 [self initCenterLineView:seatsModels];
 [self initHallLogoView:hallName];
 [self startAnimation];
-```
-translate message though block    
+```   
     
