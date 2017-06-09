@@ -4,6 +4,7 @@
     [我的简书](http://www.jianshu.com/u/848ae424944b)<br>
 The follow is result show<br>
 ![](https://github.com/itclimb/Seat/raw/master/Seat/seat1.gif)
+The main structure is create some subViews in YCSeatSelectionView<br>
 ```objective-C
 [self initScrollView];
 [self initAppLogo];
@@ -14,5 +15,5 @@ The follow is result show<br>
 [self initHallLogoView:hallName];
 [self startAnimation];
 ```
-    
+translate message though block    
     
